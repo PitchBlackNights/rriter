@@ -7,6 +7,7 @@ A TUI markdown editor made with rust
 In order of priority (Greatest to Least)
 
 - [x] Quitting  (CTRL+[q]x2)
+- [ ] Text Input
 - [ ] Markdown Syntax
 - [ ] Settings
 - [ ] Serialization system
