@@ -1,0 +1,12 @@
+[package]
+name = "rriter"
+version = "0.1.0"
+authors = ["PitchBlackNights <pitchblacknights@proton.me>"]
+edition = "2021"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+
+[dependencies]
+crossterm = "0.26.1"
+markdown = "1.0.0-alpha.11"
+tui = { package = "ratatui", version = "0.22.0" }
