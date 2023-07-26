@@ -13,4 +13,7 @@ pub mod tui;
 /// Event handler.
 pub mod handler;
 
+/// Text input handler
+pub mod text_input;
+
 extern crate markdown;

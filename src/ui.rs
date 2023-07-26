@@ -1,3 +1,4 @@
+use crate::app::App;
 #[allow(unused_imports)]
 use tui::{
     backend::Backend,
@@ -6,7 +7,6 @@ use tui::{
     widgets::{Block, BorderType, Borders, Paragraph},
     Frame,
 };
-use crate::app::App;
 
 /// Renders the user interface widgets.
 pub fn render<B: Backend>(app: &mut App, frame: &mut Frame<'_, B>) {
@@ -16,9 +16,7 @@ pub fn render<B: Backend>(app: &mut App, frame: &mut Frame<'_, B>) {
                 `char_ticks_left` = {}\n
                 `rep_char_cooldown` = {}\n
                 `last_char` = {:?}",
-            app.char_ticks_left,
-            app.rep_char_cooldown,
-            app.last_char
+            app.char_ticks_left, app.rep_char_cooldown, app.last_char
         ))
         .block(
             Block::default()

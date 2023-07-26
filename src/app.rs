@@ -1,5 +1,5 @@
-use std::error;
 use crossterm::event::KeyCode;
+use std::error;
 
 /// Application result type.
 pub type AppResult<T> = std::result::Result<T, Box<dyn error::Error>>;
